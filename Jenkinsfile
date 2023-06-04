@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
+        stage('preparation') {
             steps {
-                sh 'rm -rf *'
-                sh 'git clone https://github.com/nabghour/TP2.git'
+                sh 'echo preparation '
+                sh 'sleep 5'
             }
         }
         stage('Build') {
