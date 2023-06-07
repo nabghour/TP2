@@ -10,13 +10,13 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'chmod +x TP2/essai.sh'
+                sh 'chmod +x essai.sh'
                 sh 'sleep 5'
             }
         }
         stage('RUN') {
             steps {
-                sh 'TP2/essai.sh'
+                sh 'essai.sh'
                 sh 'sleep 5'
             }
         }
