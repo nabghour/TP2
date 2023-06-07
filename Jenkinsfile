@@ -16,7 +16,7 @@ pipeline {
         }
         stage('RUN') {
             steps {
-                sh 'essai.sh'
+                sh './essai.sh'
                 sh 'sleep 5'
             }
         }
